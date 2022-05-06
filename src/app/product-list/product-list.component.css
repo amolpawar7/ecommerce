@@ -1,0 +1,35 @@
+.card {
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+    min-width: 30%;
+    margin: 1px;
+  }
+  .card-title {
+    font-weight: bold;
+  }
+  .card img {
+    width: 30%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: calc(0.25rem - 1px);
+  }
+  @media only screen and (max-width: 768px) {
+    a {
+      display: none;
+    }
+    .card-body {
+      padding: 0.5em 1.2em;
+    }
+    .card-body .card-text {
+      margin: 0;
+    }
+    .card img {
+      width: 50%;
+    }
+  }
+
+  .card-list{
+    display: flex;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+  }
